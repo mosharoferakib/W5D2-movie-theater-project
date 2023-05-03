@@ -1,0 +1,16 @@
+Database relationship reasons:
+
+1. Customer_id to ticket_id: One to many
+	A customer can buy multiple tickets.
+
+2. Customers customer_name to tickets customer_name: one to one
+	each tickets will have the specific customer name.
+
+3. Tickets movie_name to showtime movie_name: one to many
+	a movie can be shown at a different showtime but each tickets will have only one movie name.
+
+4. Tickets movie_name to Movies movie_name: one to many
+	Tickets can have a same or different name of movies.
+
+5. ticket_number set to unique so it prints drifferent ticket_number for each tickets and the number never repeats.
+	
